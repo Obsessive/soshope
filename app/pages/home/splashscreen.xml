@@ -1,0 +1,5 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" actionBarHidden="true" loaded="splashscreenLoaded" unloaded="splashscreenUnloaded">
+  <GridLayout rows="*" columns="*" class="whitebackground">
+    <Image row="0" col="0" src="~/images/splashscreen.png" class="position" stretch ="aspectFit"/>
+  </GridLayout>
+</page>

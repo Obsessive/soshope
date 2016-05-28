@@ -1,0 +1,31 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="triageLoaded" unloaded="triageUnloaded">
+  <GridLayout rows="auto,*" columns="*">
+    <GridLayout row="0" col="0" rows="auto" columns="auto,*,auto"  class="themebackground">
+      <Label row="0" col="0" id="left_id" text="  &#xf137;" class="fontsymbol themebackground whitetext textcenter font28 position"/>
+      <Label row="0" col="1" textWrap="true" text="{{ triagetitle }}" class="themebackground whitetext textcenter font28"/>
+      <Label row="0" col="2" id="right_id" text="&#xf138;  " class="fontsymbol themebackground whitetext textcenter font28 position"/>
+    </GridLayout>
+    <StackLayout row="1" col="0" class="margin10">
+      <ScrollView>
+        <StackLayout>
+          <StackLayout visibility="{{ triagepage==0? 'visible' : 'collapse' }}">
+            <Label textWrap="true" class="blacktext font24 bold" text="What to do&#063; Severe Impairment of 1 or More Parameters"/>
+            <Label textWrap="true" class="blacktext font24" text="{{ triagecontent1 }}"/>
+          </StackLayout>
+          <StackLayout visibility="{{ triagepage==1? 'visible' : 'collapse' }}">
+            <Label textWrap="true" class="blacktext font24 bold" text="What to do? Mild-Moderate Impairment of 1 or More Parameters"/>
+            <Label textWrap="true" class="blacktext font24" text="{{ triagecontent2 }}"/>
+          </StackLayout>
+          <StackLayout visibility="{{ triagepage==2? 'visible' : 'collapse' }}">
+            <Label textWrap="true" class="blacktext font24 bold" text="What to do? Mild or No Impairment of any Parameter"/>
+            <Label textWrap="true" class="blacktext font24" text="{{ triagecontent3 }}"/>
+          </StackLayout>
+          <StackLayout visibility="{{ triagepage==3? 'visible' : 'collapse' }}">
+            <Label textWrap="true" class="blacktext font24 bold" text="Beware"/>
+            <Label textWrap="true" class="blacktext font24" text="{{ triagecontent5 }}"/>
+          </StackLayout>
+        </StackLayout>
+      </ScrollView>
+    </StackLayout>
+  </GridLayout>
+</page>

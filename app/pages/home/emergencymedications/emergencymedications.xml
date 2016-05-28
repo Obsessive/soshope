@@ -1,0 +1,96 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:dd="nativescript-drop-down" loaded="emergencymedicationsLoaded">
+  <StackLayout>
+  	<dd:DropDown items="{{ med_items }}" id="med" selectedIndex="{{ med_selectedIndex }}" class="margin15 font18 blacktext" />
+  	<!-- <GridLayout rows="auto" columns="*,auto">
+  		<TextView row="0" col="0" hint="WEIGHT" id="id_weight" class="margin5 blacktext"/>
+  		<Button row="0" col="1" text="CALCULATE" tap="{{ calculate_action }}" class="themebackground border3 whitetext" keyboardType="phone"/>
+  	</GridLayout> -->
+  	<ScrollView>
+  		<StackLayout class="margin10">
+  			<StackLayout visibility="{{ medpage== 0 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24 bold" text="Available as 1ml – 1mg of 1.1000"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ adrenalin1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Autoinjector:"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ adrenalin2 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Anaphylaxis"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ adrenalin3 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Asystole or Bradycardia"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ adrenalin4 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Respiratory uses:"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ adrenalin5 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 1 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24 bold" text="Snake Bite"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ snakebite1 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 2 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24" text="{{ atropinesulfate1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Bradycardia / Asystole :"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ atropinesulfate2 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Endotracheal"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ atropinesulfate3 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Organophosphate or carbamate insecticide poisoning"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ atropinesulfate4 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 3 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24" text="{{ dexamethasone1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Asthma exacerbation: "/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ dexamethasone2 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Croup :"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ dexamethasone3 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 4 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24" text="{{ fosphenytoin1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Status Epileptics"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ fosphenytoin2 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 5 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24" text="{{ hydrocortisone1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Asthma"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ hydrocortisone2 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Anaphylaxis"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ hydrocortisone3 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 6 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24" text="{{ ipratropiummdi1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Acute Wheeze / Acute Asthma"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ ipratropiummdi2 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 7 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24" text="{{ lorazepam1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Seizures"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ lorazepam2 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 8 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24" text="{{ midazolam1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Seizure / Status Epileptics"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ midazolam2 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 9 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24" text="{{ or1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Severe Dehydration"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ or2 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 10 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24" text="{{ pheniraminemaleate1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Acute Allergic Reaction like Anaphylaxis,  Blood Transfusion Reaction"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ pheniraminemaleate2 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 11 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24" text="{{ prozosin1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Scorpion envenomation:"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ prozosin2 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 12 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24 bold" text="Acute Wheeze / Acute Asthma"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ salbutamolmdi1 }}"/>
+  			</StackLayout>
+  			<StackLayout visibility="{{ medpage== 13 ? 'visible' : 'collapse' }}">
+  				<Label textWrap="true" class="blacktext font24" text="{{ salbutamolnebulization1 }}"/>
+  				<Label textWrap="true" class="blacktext font24 bold" text="Acute Wheeze / Acute Asthma"/>
+  				<Label textWrap="true" class="blacktext font24" text="{{ salbutamolnebulization2 }}"/>
+  			</StackLayout>
+  		</StackLayout>
+  	</ScrollView>
+  </StackLayout>
+</page>

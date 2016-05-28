@@ -1,0 +1,331 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="equipmentsizingchartLoaded" xmlns:dd="nativescript-drop-down" unloaded="equipmentsizingUnloaded">
+  <GridLayout rows="auto,*" columns="*">
+    <dd:DropDown row="0" col="0" items="{{ weightitems }}" id="weight_id" selectedIndex="{{ weightselectedIndex }}" class="margin15 font18 blacktext" />
+    <StackLayout row="1" col="0" >
+      <ScrollView>
+        <StackLayout class="margin5">
+          <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*" visibility="{{ equipmentsizingchartpage==0? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="Equipment" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="&lt; 3Kg" class="blacktext font20 margin5 textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Resuscitation Bag" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="Neonatal 250ml" class="blacktext font20 margin5 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="Oxygen Mask(NRB)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="0" class="blacktext font20 margin5 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="Oral Airway(mm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="40" class="blacktext font20 margin5 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="Laryngoscope Blade (size)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="&lt;2 kg: 0 straight \n &gt; 2 kg: 1 straight" class="blacktext font20 margin5 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="ET Tube (mm)†" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="&lt; 1 Kg 2.5 Uncuffed,1-2 Kg 3.0 Uncuffed" class="blacktext font20 margin5 textcenter"/>
+            <Label row="6" col="0" textWrap="true" text="ET Tube Insertion Length (cm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="6" col="1" textWrap="true" text="0.5 Kg:6.5,1 Kg: 7,2 Kg: 8,3 Kg: 9" class="blacktext font20 margin5 textcenter"/>
+            <Label row="7" col="0" textWrap="true" text="Suction Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="7" col="1" textWrap="true" text="5" class="blacktext font20 margin5 textcenter"/>
+            <Label row="8" col="0" textWrap="true" text="BP Cuff" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="8" col="1" textWrap="true" text="Premie, neonatal" class="blacktext font20 margin5 textcenter"/>
+            <Label row="9" col="0" textWrap="true" text="IV Catheter (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="9" col="1" textWrap="true" text="24" class="blacktext font20 margin5 textcenter"/>
+            <Label row="10" col="0" textWrap="true" text="IO (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="10" col="1" textWrap="true" text="18" class="blacktext font20 margin5 textcenter"/>
+            <Label row="11" col="0" textWrap="true" text="NG Tube (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="11" col="1" textWrap="true" text="5" class="blacktext font20 margin5 textcenter"/>
+            <Label row="12" col="0" textWrap="true" text="Urinary Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="12" col="1" textWrap="true" text="5" class="blacktext font20 margin5 textcenter"/>
+            <Label row="13" col="0" textWrap="true" text="Chest Tube(F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="13" col="1" textWrap="true" text="8-10" class="blacktext font20 margin5 textcenter"/>
+            <Label row="14" col="0" textWrap="true" text="LMA SIZES" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="14" col="1" textWrap="true" text="1" class="blacktext font20 margin5 textcenter"/>
+          </GridLayout>
+          <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*" visibility="{{ equipmentsizingchartpage==1? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="Equipment" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="3-5 Kg" class="blacktext font20 margin5 textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Resuscitation Bag" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="Neonatal 500 ml" class="blacktext font20 margin5 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="Oxygen Mask(NRB)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="1" class="blacktext font20 margin5 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="Oral Airway(mm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="50" class="blacktext font20 margin5 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="Laryngoscope Blade (size)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="1 straight" class="blacktext font20 margin5 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="ET Tube (mm)†" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="2-4 Kg 3.5 Uncuffed,5 Kg 3.5 Uncuffed" class="blacktext font20 margin5 textcenter"/>
+            <Label row="6" col="0" textWrap="true" text="ET Tube Insertion Length (cm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="6" col="1" textWrap="true" text="3 Kg: 9-9.5,4 Kg: 9.5-10,5 Kg: 10-10.5" class="blacktext font20 margin5 textcenter"/>
+            <Label row="7" col="0" textWrap="true" text="Suction Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="7" col="1" textWrap="true" text="6" class="blacktext font20 margin5 textcenter"/>
+            <Label row="8" col="0" textWrap="true" text="BP Cuff" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="8" col="1" textWrap="true" text="Neonatal /Infant" class="blacktext font20 margin5 textcenter"/>
+            <Label row="9" col="0" textWrap="true" text="IV Catheter (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="9" col="1" textWrap="true" text="22-24" class="blacktext font20 margin5 textcenter"/>
+            <Label row="10" col="0" textWrap="true" text="IO (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="10" col="1" textWrap="true" text="18" class="blacktext font20 margin5 textcenter"/>
+            <Label row="11" col="0" textWrap="true" text="NG Tube (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="11" col="1" textWrap="true" text="5-8" class="blacktext font20 margin5 textcenter"/>
+            <Label row="12" col="0" textWrap="true" text="Urinary Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="12" col="1" textWrap="true" text="5-8" class="blacktext font20 margin5 textcenter"/>
+            <Label row="13" col="0" textWrap="true" text="Chest Tube(F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="13" col="1" textWrap="true" text="12" class="blacktext font20 margin5 textcenter"/>
+            <Label row="14" col="0" textWrap="true" text="LMA SIZES" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="14" col="1" textWrap="true" text="1" class="blacktext font20 margin5 textcenter"/>
+          </GridLayout>
+          <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*" visibility="{{ equipmentsizingchartpage==2? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="Equipment" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="Small Infant 6-7 Kg" class="blacktext font20 margin5 textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Resuscitation Bag" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="Infant/Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="Oxygen Mask(NRB)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="Pediatric" class="blacktext font20 margin5 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="Oral Airway(mm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="50" class="blacktext font20 margin5 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="Laryngoscope Blade (size)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="1 Straight" class="blacktext font20 margin5 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="ET Tube (mm)†" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="3.5 Uncuffed 3.0 Cuffed" class="blacktext font20 margin5 textcenter"/>
+            <Label row="6" col="0" textWrap="true" text="ET Tube Insertion Length (cm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="6" col="1" textWrap="true" text="10.5-11" class="blacktext font20 margin5 textcenter"/>
+            <Label row="7" col="0" textWrap="true" text="Suction Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="7" col="1" textWrap="true" text="8" class="blacktext font20 margin5 textcenter"/>
+            <Label row="8" col="0" textWrap="true" text="BP Cuff" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="8" col="1" textWrap="true" text="Infant/Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="9" col="0" textWrap="true" text="IV Catheter (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="9" col="1" textWrap="true" text="22-24" class="blacktext font20 margin5 textcenter"/>
+            <Label row="10" col="0" textWrap="true" text="IO (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="10" col="1" textWrap="true" text="18/15" class="blacktext font20 margin5 textcenter"/>
+            <Label row="11" col="0" textWrap="true" text="NG Tube (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="11" col="1" textWrap="true" text="5-8" class="blacktext font20 margin5 textcenter"/>
+            <Label row="12" col="0" textWrap="true" text="Urinary Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="12" col="1" textWrap="true" text="8" class="blacktext font20 margin5 textcenter"/>
+            <Label row="13" col="0" textWrap="true" text="Chest Tube(F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="13" col="1" textWrap="true" text="10-12" class="blacktext font20 margin5 textcenter"/>
+            <Label row="14" col="0" textWrap="true" text="LMA SIZES" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="14" col="1" textWrap="true" text="1.5" class="blacktext font20 margin5 textcenter"/>
+          </GridLayout>
+          <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*" visibility="{{ equipmentsizingchartpage==3? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="Equipment" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="Infant 8-9 Kg" class="blacktext font20 margin5 textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Resuscitation Bag" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="Infant/Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="Oxygen Mask(NRB)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="Pediatric" class="blacktext font20 margin5 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="Oral Airway(mm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="50" class="blacktext font20 margin5 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="Laryngoscope Blade (size)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="1 Straight" class="blacktext font20 margin5 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="ET Tube (mm)†" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="3.5 Uncuffed,3.0 Cuffed" class="blacktext font20 margin5 textcenter"/>
+            <Label row="6" col="0" textWrap="true" text="ET Tube Insertion Length (cm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="6" col="1" textWrap="true" text="10.5-11" class="blacktext font20 margin5 textcenter"/>
+            <Label row="7" col="0" textWrap="true" text="Suction Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="7" col="1" textWrap="true" text="8" class="blacktext font20 margin5 textcenter"/>
+            <Label row="8" col="0" textWrap="true" text="BP Cuff" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="8" col="1" textWrap="true" text="Infant/Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="9" col="0" textWrap="true" text="IV Catheter (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="9" col="1" textWrap="true" text="22-24" class="blacktext font20 margin5 textcenter"/>
+            <Label row="10" col="0" textWrap="true" text="IO (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="10" col="1" textWrap="true" text="18/15" class="blacktext font20 margin5 textcenter"/>
+            <Label row="11" col="0" textWrap="true" text="NG Tube (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="11" col="1" textWrap="true" text="5-8" class="blacktext font20 margin5 textcenter"/>
+            <Label row="12" col="0" textWrap="true" text="Urinary Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="12" col="1" textWrap="true" text="8" class="blacktext font20 margin5 textcenter"/>
+            <Label row="13" col="0" textWrap="true" text="Chest Tube(F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="13" col="1" textWrap="true" text="10-12" class="blacktext font20 margin5 textcenter"/>
+            <Label row="14" col="0" textWrap="true" text="LMA SIZES" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="14" col="1" textWrap="true" text="1.5" class="blacktext font20 margin5 textcenter"/>
+          </GridLayout>
+          <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*" visibility="{{ equipmentsizingchartpage==4? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="Equipment" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="Toddler 10-11 Kg" class="blacktext font20 margin5 textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Resuscitation Bag" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="Oxygen Mask(NRB)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="Pediatric" class="blacktext font20 margin5 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="Oral Airway(mm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="60" class="blacktext font20 margin5 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="Laryngoscope Blade (size)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="1 Straight" class="blacktext font20 margin5 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="ET Tube (mm)†" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="4.0 Uncuffed,3.5 Cuffed" class="blacktext font20 margin5 textcenter"/>
+            <Label row="6" col="0" textWrap="true" text="ET Tube Insertion Length (cm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="6" col="1" textWrap="true" text="11-12" class="blacktext font20 margin5 textcenter"/>
+            <Label row="7" col="0" textWrap="true" text="Suction Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="7" col="1" textWrap="true" text="10" class="blacktext font20 margin5 textcenter"/>
+            <Label row="8" col="0" textWrap="true" text="BP Cuff" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="8" col="1" textWrap="true" text="Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="9" col="0" textWrap="true" text="IV Catheter (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="9" col="1" textWrap="true" text="20-24" class="blacktext font20 margin5 textcenter"/>
+            <Label row="10" col="0" textWrap="true" text="IO (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="10" col="1" textWrap="true" text="15" class="blacktext font20 margin5 textcenter"/>
+            <Label row="11" col="0" textWrap="true" text="NG Tube (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="11" col="1" textWrap="true" text="8-10" class="blacktext font20 margin5 textcenter"/>
+            <Label row="12" col="0" textWrap="true" text="Urinary Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="12" col="1" textWrap="true" text="8-10" class="blacktext font20 margin5 textcenter"/>
+            <Label row="13" col="0" textWrap="true" text="Chest Tube(F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="13" col="1" textWrap="true" text="16-20" class="blacktext font20 margin5 textcenter"/>
+            <Label row="14" col="0" textWrap="true" text="LMA SIZES" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="14" col="1" textWrap="true" text="1.5" class="blacktext font20 margin5 textcenter"/>
+          </GridLayout>
+          <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*" visibility="{{ equipmentsizingchartpage==5? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="Equipment" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="Small child 12-14 Kg" class="blacktext font20 margin5 textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Resuscitation Bag" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="Oxygen Mask(NRB)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="Pediatric" class="blacktext font20 margin5 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="Oral Airway(mm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="60" class="blacktext font20 margin5 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="Laryngoscope Blade (size)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="2 Straight" class="blacktext font20 margin5 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="ET Tube (mm)†" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="4.5 Uncuffed,4.0 Cuffed" class="blacktext font20 margin5 textcenter"/>
+            <Label row="6" col="0" textWrap="true" text="ET Tube Insertion Length (cm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="6" col="1" textWrap="true" text="13.5" class="blacktext font20 margin5 textcenter"/>
+            <Label row="7" col="0" textWrap="true" text="Suction Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="7" col="1" textWrap="true" text="10" class="blacktext font20 margin5 textcenter"/>
+            <Label row="8" col="0" textWrap="true" text="BP Cuff" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="8" col="1" textWrap="true" text="Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="9" col="0" textWrap="true" text="IV Catheter (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="9" col="1" textWrap="true" text="18-22" class="blacktext font20 margin5 textcenter"/>
+            <Label row="10" col="0" textWrap="true" text="IO (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="10" col="1" textWrap="true" text="15" class="blacktext font20 margin5 textcenter"/>
+            <Label row="11" col="0" textWrap="true" text="NG Tube (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="11" col="1" textWrap="true" text="10" class="blacktext font20 margin5 textcenter"/>
+            <Label row="12" col="0" textWrap="true" text="Urinary Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="12" col="1" textWrap="true" text="10" class="blacktext font20 margin5 textcenter"/>
+            <Label row="13" col="0" textWrap="true" text="Chest Tube(F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="13" col="1" textWrap="true" text="20-24" class="blacktext font20 margin5 textcenter"/>
+            <Label row="14" col="0" textWrap="true" text="LMA SIZES" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="14" col="1" textWrap="true" text="2" class="blacktext font20 margin5 textcenter"/>
+          </GridLayout>
+          <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*" visibility="{{ equipmentsizingchartpage==6? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="Equipment" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="Child 15-18 Kg" class="blacktext font20 margin5 textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Resuscitation Bag" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="Oxygen Mask(NRB)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="Pediatric" class="blacktext font20 margin5 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="Oral Airway(mm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="60" class="blacktext font20 margin5 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="Laryngoscope Blade (size)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="2 Straight" class="blacktext font20 margin5 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="ET Tube (mm)†" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="5.0 Uncuffed,4.5 Cuffed" class="blacktext font20 margin5 textcenter"/>
+            <Label row="6" col="0" textWrap="true" text="ET Tube Insertion Length (cm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="6" col="1" textWrap="true" text="14-15" class="blacktext font20 margin5 textcenter"/>
+            <Label row="7" col="0" textWrap="true" text="Suction Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="7" col="1" textWrap="true" text="10" class="blacktext font20 margin5 textcenter"/>
+            <Label row="8" col="0" textWrap="true" text="BP Cuff" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="8" col="1" textWrap="true" text="Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="9" col="0" textWrap="true" text="IV Catheter (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="9" col="1" textWrap="true" text="18-22" class="blacktext font20 margin5 textcenter"/>
+            <Label row="10" col="0" textWrap="true" text="IO (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="10" col="1" textWrap="true" text="15" class="blacktext font20 margin5 textcenter"/>
+            <Label row="11" col="0" textWrap="true" text="NG Tube (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="11" col="1" textWrap="true" text="10" class="blacktext font20 margin5 textcenter"/>
+            <Label row="12" col="0" textWrap="true" text="Urinary Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="12" col="1" textWrap="true" text="10-12" class="blacktext font20 margin5 textcenter"/>
+            <Label row="13" col="0" textWrap="true" text="Chest Tube(F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="13" col="1" textWrap="true" text="20-24" class="blacktext font20 margin5 textcenter"/>
+            <Label row="14" col="0" textWrap="true" text="LMA SIZES" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="14" col="1" textWrap="true" text="2" class="blacktext font20 margin5 textcenter"/>
+          </GridLayout>
+          <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*" visibility="{{ equipmentsizingchartpage==7? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="Equipment" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="Child 19-23 Kg" class="blacktext font20 margin5 textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Resuscitation Bag" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="Oxygen Mask(NRB)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="Pediatric" class="blacktext font20 margin5 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="Oral Airway(mm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="70" class="blacktext font20 margin5 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="Laryngoscope Blade (size)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="2 Straight or Curved" class="blacktext font20 margin5 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="ET Tube (mm)†" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="5.5 Uncuffed,5.0 Cuffed" class="blacktext font20 margin5 textcenter"/>
+            <Label row="6" col="0" textWrap="true" text="ET Tube Insertion Length (cm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="6" col="1" textWrap="true" text="16.5" class="blacktext font20 margin5 textcenter"/>
+            <Label row="7" col="0" textWrap="true" text="Suction Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="7" col="1" textWrap="true" text="10" class="blacktext font20 margin5 textcenter"/>
+            <Label row="8" col="0" textWrap="true" text="BP Cuff" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="8" col="1" textWrap="true" text="Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="9" col="0" textWrap="true" text="IV Catheter (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="9" col="1" textWrap="true" text="18-20" class="blacktext font20 margin5 textcenter"/>
+            <Label row="10" col="0" textWrap="true" text="IO (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="10" col="1" textWrap="true" text="15" class="blacktext font20 margin5 textcenter"/>
+            <Label row="11" col="0" textWrap="true" text="NG Tube (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="11" col="1" textWrap="true" text="12-14" class="blacktext font20 margin5 textcenter"/>
+            <Label row="12" col="0" textWrap="true" text="Urinary Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="12" col="1" textWrap="true" text="10-12" class="blacktext font20 margin5 textcenter"/>
+            <Label row="13" col="0" textWrap="true" text="Chest Tube(F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="13" col="1" textWrap="true" text="24-32" class="blacktext font20 margin5 textcenter"/>
+            <Label row="14" col="0" textWrap="true" text="LMA SIZES" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="14" col="1" textWrap="true" text="2" class="blacktext font20 margin5 textcenter"/>
+          </GridLayout>
+          <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*" visibility="{{ equipmentsizingchartpage==8? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="Equipment" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="Large Child 24-29 Kg" class="blacktext font20 margin5 textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Resuscitation Bag" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="Oxygen Mask(NRB)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="Pediatric" class="blacktext font20 margin5 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="Oral Airway(mm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="80" class="blacktext font20 margin5 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="Laryngoscope Blade (size)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="2 Straight or Curved" class="blacktext font20 margin5 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="ET Tube (mm)†" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="6.0 Cuffed" class="blacktext font20 margin5 textcenter"/>
+            <Label row="6" col="0" textWrap="true" text="ET Tube Insertion Length (cm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="6" col="1" textWrap="true" text="17-18" class="blacktext font20 margin5 textcenter"/>
+            <Label row="7" col="0" textWrap="true" text="Suction Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="7" col="1" textWrap="true" text="10" class="blacktext font20 margin5 textcenter"/>
+            <Label row="8" col="0" textWrap="true" text="BP Cuff" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="8" col="1" textWrap="true" text="Child" class="blacktext font20 margin5 textcenter"/>
+            <Label row="9" col="0" textWrap="true" text="IV Catheter (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="9" col="1" textWrap="true" text="18-20" class="blacktext font20 margin5 textcenter"/>
+            <Label row="10" col="0" textWrap="true" text="IO (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="10" col="1" textWrap="true" text="15" class="blacktext font20 margin5 textcenter"/>
+            <Label row="11" col="0" textWrap="true" text="NG Tube (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="11" col="1" textWrap="true" text="14-18" class="blacktext font20 margin5 textcenter"/>
+            <Label row="12" col="0" textWrap="true" text="Urinary Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="12" col="1" textWrap="true" text="12" class="blacktext font20 margin5 textcenter"/>
+            <Label row="13" col="0" textWrap="true" text="Chest Tube(F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="13" col="1" textWrap="true" text="28-32" class="blacktext font20 margin5 textcenter"/>
+            <Label row="14" col="0" textWrap="true" text="LMA SIZES" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="14" col="1" textWrap="true" text="2.5" class="blacktext font20 margin5 textcenter"/>
+          </GridLayout>
+          <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*" visibility="{{ equipmentsizingchartpage==9? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="Equipment" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="Adult 30-36 Kg" class="blacktext font20 margin5 textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Resuscitation Bag" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="Adult" class="blacktext font20 margin5 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="Oxygen Mask(NRB)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="Pediatric/Adult" class="blacktext font20 margin5 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="Oral Airway(mm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="80" class="blacktext font20 margin5 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="Laryngoscope Blade (size)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="3 Straight or Curved" class="blacktext font20 margin5 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="ET Tube (mm)†" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="6.5 Cuffed" class="blacktext font20 margin5 textcenter"/>
+            <Label row="6" col="0" textWrap="true" text="ET Tube Insertion Length (cm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="6" col="1" textWrap="true" text="18.5-19.5" class="blacktext font20 margin5 textcenter"/>
+            <Label row="7" col="0" textWrap="true" text="Suction Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="7" col="1" textWrap="true" text="10-12" class="blacktext font20 margin5 textcenter"/>
+            <Label row="8" col="0" textWrap="true" text="BP Cuff" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="8" col="1" textWrap="true" text="Small Adult" class="blacktext font20 margin5 textcenter"/>
+            <Label row="9" col="0" textWrap="true" text="IV Catheter (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="9" col="1" textWrap="true" text="16-20" class="blacktext font20 margin5 textcenter"/>
+            <Label row="10" col="0" textWrap="true" text="IO (ga)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="10" col="1" textWrap="true" text="15" class="blacktext font20 margin5 textcenter"/>
+            <Label row="11" col="0" textWrap="true" text="NG Tube (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="11" col="1" textWrap="true" text="16-18" class="blacktext font20 margin5 textcenter"/>
+            <Label row="12" col="0" textWrap="true" text="Urinary Catheter (F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="12" col="1" textWrap="true" text="12" class="blacktext font20 margin5 textcenter"/>
+            <Label row="13" col="0" textWrap="true" text="Chest Tube(F)" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="13" col="1" textWrap="true" text="32-38" class="blacktext font20 margin5 textcenter"/>
+            <Label row="14" col="0" textWrap="true" text="LMA SIZES" class="blacktext margin5 font20 margin5 bold textcenter"/>
+            <Label row="14" col="1" textWrap="true" text="3" class="blacktext font20 margin5 textcenter"/>
+          </GridLayout>
+      </StackLayout>
+      </ScrollView>
+    </StackLayout>
+  </GridLayout>
+</page>

@@ -1,0 +1,9 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loginLoaded">
+  <StackLayout>
+  	<Label text="Please enter your details" textWrap="true" class="font28 blacktext margintop10 textcenter position"/>
+  	<TextView hint="NAME" id="id_name" class="margin5 blacktext"/>
+    <TextView hint="PHONE" id="id_phone" class="margin5 blacktext" keyboardType="phone"/>
+    <TextView hint="EMAIL" id="id_email" class="margin5 blacktext" />
+  	<Button text="REGISTER" tap="{{ login_action }}" textWrap="true" class="themebackground whitetext border3 margin10"/>
+  </StackLayout>
+</page>

@@ -1,0 +1,12 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="clinicalconditionsLoaded">
+  <StackLayout>
+    <ListView id="clinicalconditions_id" items="{{ clinicalconditions_items }}" itemTap="clinicalconditions_tap" separatorColor="#FFFFFF" class="margin3 whitebackground">
+      <ListView.itemTemplate>
+        <GridLayout rows="50" columns="auto,*" class="margin10 themebackground">
+          <Label  row="0" col="0" textWrap="true" class="verticalcenter font24 whitetext margin5" text="{{ clinicalconditions_name }}" />
+          <Image row="0" col="1" src="~/images/arrowcolor.png" class="right verticalcenter margin5" />
+        </GridLayout>
+      </ListView.itemTemplate>
+    </ListView>
+  </StackLayout>
+</page>

@@ -1,0 +1,53 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="teamLoaded">
+  <ScrollView>
+  <StackLayout>
+    <Image src="~/images/iap.jpg" class="position margin10" stretch ="none"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="IAP"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="An Organization aims to care for every child through every Doctor"/>
+    <Image src="~/images/dr4.png" class="position margin10" stretch ="aspectFit"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dr Pramod Jog"/>
+    <Label textWrap="true" class="blacktext textcenter font18 position" text="Chairman SOS-HOPE 2016"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="President Indian Academy of pediatrics"/>
+    <Image src="~/images/dr2.png" class="position margin10" stretch ="aspectFit"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dr Jagdish Chinappa"/>
+    <Label textWrap="true" class="blacktext textcenter font18 position" text="National Convener SOS-HOPE 2016,brain Behind and Founding Member, SOS-HOPE"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="Consultant pediatrician Manipal Hospital Bangalore"/>
+    <Image src="~/images/bala.png" class="position margin10" stretch ="aspectFit"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dr B.V Balachandra"/>
+    <Label textWrap="true" class="blacktext textcenter font18 position" text="National Co-ordinator SOS-HOPE 2016,brain Behind and Founding Member, SOS-HOPE"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="Consultant pediatrician and Allergist Bangalore"/>
+    <Image src="~/images/dr1.png" class="position margin10" stretch ="aspectFit"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dr Bakul Parekh"/>
+    <Label textWrap="true" class="blacktext textcenter font18 position" text="National Co-ordinator SOS-HOPE 2016"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="Hon Secretary General Indian Academy of Pediatrics"/>
+    <Image src="~/images/drsan.jpg" class="position margin10" stretch ="aspectFit"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dr Sanjay Bafna"/>
+    <Label textWrap="true" class="blacktext textcenter font18 position" text="National co-Convener SOS-HOPE 2016"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="Consultant pediatrician Puna"/>
+    <Image src="~/images/drvasu.png" class="position margin10" stretch ="aspectFit"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dr A S Vasudev"/>
+    <Label textWrap="true" class="blacktext textcenter font18 position" text="National joint Co-ordinator SOS-HOPE 2016,North zone Co-ordinator"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="Consultant pediatrician Delhi,Ped Nephrologist"/>
+    <Image src="~/images/drgnan.jpg" class="position margin10" stretch ="aspectFit"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dr Gnanamurthy"/>
+    <Label textWrap="true" class="blacktext textcenter font18 position" text="South Zone Co-ordinator SOS-HOPE 2016"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="Consultant pediatrician Bangalore"/>
+    <Image src="~/images/dr3.png" class="position margin10" stretch ="aspectFit"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dr.Vasant Khalatkar"/>
+    <Label textWrap="true" class="blacktext textcenter font18 position" text="West zone Co-ordinator SOS-HOPE 2016"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="Consultant pediatrician Nagpur"/>
+    <Image src="~/images/drnar.jpg" class="position margin10" stretch ="aspectFit"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dr Narayana Modi"/>
+    <Label textWrap="true" class="blacktext textcenter font18 position" text="Central Zone Co-ordinator SOS-HOPE 2016"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="Consultant pediatrician Cuttack"/>
+    <Image src="~/images/drras.jpg" class="position margin10" stretch ="aspectFit"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dr Rashna Dass Hazarika"/>
+    <Label textWrap="true" class="blacktext textcenter font18 position" text="East Zone Co-ordinator SOS-HOPE 2016"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="Consultant pediatrician Gawahati"/>
+    <Image src="~/images/micro.png" class="position margin10" stretch ="none"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dilip surana"/>
+    <Label textWrap="true" class="blacktext textcenter font18 position" text="Chairman Microlabs"/>
+    <Label textWrap="true" class="blacktext textcenter font24 position" text="Man with kind heart and good intentions"/>
+  </StackLayout>
+</ScrollView>
+</page>

@@ -1,0 +1,32 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="procedureLoaded">
+  <ScrollView>
+  <StackLayout>
+    <Button text="IAP Presidential Address" tap="{{ iap_presidential_address_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Introduction" tap="{{ introduction_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Recognition of a Sick Child" tap="{{ recognition_of_a_sick_child_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Stabilization of a Sick child" tap="{{ stabilization_of_a_sick_child_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Respiratory Emergencies" tap="{{ respiratory_emergencies_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Circulation Emergencies" tap="{{ circulation_emergencies_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Seizures and Unconscious Child" tap="{{ seizures_and_unconscious_child_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Anaphylaxis" tap="{{ anaphylaxis_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Fever" tap="{{ fever_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Minor Head Injury" tap="{{ minor_head_injury_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Pattern of Crying and recognition of Illness" tap="{{ pattern_of_crying_and_recognition_of_illness_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Bites and Stings" tap="{{ bites_and_stings_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Pulled Elbow" tap="{{ pulled_elbow_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Skin Clues to Emergencies" tap="{{ skin_clues_to_emergencies_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Epistaxis" tap="{{ epistaxis_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Ingestion of Toxins" tap="{{ ingestion_of_toxins_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="CPR Procedure" tap="{{ cpr_procedure_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="LMA" tap="{{ lma_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Intraosseous cannulation procedure" tap="{{ intraosseous_cannulation_procedure_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Demonstration of Inhaler for child less than 4 years" tap="{{ demonstration_of_inhaler_for_child_less_than_4_years_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Demonstration of Inhaler for child more than 4 years" tap="{{ demonstration_of_inhaler_for_child_more_than_4_years_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Foreign body Removal procedure" tap="{{ foreign_body_removal_procedure_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Suturing Procedure" tap="{{ suturing_procedure_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Steristrips Procedure" tap="{{ steristrips_procedure_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Dermabond Procedure" tap="{{ dermabond_procedure_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+    <Button text="Skin Stapling Procedure" tap="{{ skin_stapling_procedure_action }}" textWrap="true" class="border3 themebackground whitetext margin10"/>
+  </StackLayout>
+</ScrollView>
+</page>

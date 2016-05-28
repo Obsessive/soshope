@@ -1,0 +1,11 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="transportLoaded">
+  <GridLayout rows="auto,*,auto" columns="*">
+    <Label row="0" col="0" textWrap="true" text="TRANSPORT" class="themebackground whitetext textcenter font28"/>
+    <StackLayout row="1" col="0">
+      <ScrollView>
+        <Label textWrap="true" text="{{ transportcontent }}" class="blacktext font24"/>
+      </ScrollView>
+    </StackLayout>
+    <Button tap="{{ transportpic_action }}" textWrap="true" row="2" col="0" text="MINIMAL DOCUMENTATION" class="themebackground whitetext border3 margin10"/>
+  </GridLayout>
+</page>

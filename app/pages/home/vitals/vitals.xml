@@ -1,0 +1,84 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="vitalsLoaded" unloaded="vitalsUnloaded">
+  <GridLayout rows="auto,*" columns="*">
+    <GridLayout row="0" col="0" rows="auto" columns="auto,*,auto"  class="themebackground">
+      <Label row="0" col="0" id="left_id" text="  &#xf137;" class="fontsymbol themebackground whitetext textcenter font28 position"/>
+      <Label row="0" col="1" textWrap="true" text="{{ vitalstitle }}" class="themebackground whitetext textcenter font28"/>
+      <Label row="0" col="2" id="right_id" text="&#xf138;  " class="fontsymbol themebackground whitetext textcenter font28 position"/>
+    </GridLayout>
+    <StackLayout row="1" col="0" class="margin10">
+      <ScrollView>
+        <StackLayout>
+          <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*,*,*" visibility="{{ vitalspage==0? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="AGE" class="whitetext themebackground margin5 font22 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="HEART RATE(BEATS/MIN)" class="whitetext themebackground margin5 font22 bold textcenter"/>
+            <Label row="0" col="2" textWrap="true" text="BLOOD PRESSURE(MM/HG)" class="whitetext themebackground margin5 font22 bold textcenter"/>
+            <Label row="0" col="3" textWrap="true" text="RESPIRATORY RATE(BREATHS/MIN)" class="whitetext themebackground margin5 font22 bold textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Premature" class="blacktext font22 textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="120-170 *" class="blacktext font22 textcenter"/>
+            <Label row="1" col="2" textWrap="true" text="55-75/35-45†" class="blacktext font22 textcenter"/>
+            <Label row="1" col="3" textWrap="true" text="40-70†" class="blacktext font22 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="0-3 mo" class="blacktext font22 textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="100-150 *" class="blacktext font22 textcenter"/>
+            <Label row="2" col="2" textWrap="true" text="65-85/45-55" class="blacktext font22 textcenter"/>
+            <Label row="2" col="3" textWrap="true" text="35-55" class="blacktext font22 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="3-6 mo" class="blacktext font22 textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="90-120" class="blacktext font22 textcenter"/>
+            <Label row="3" col="2" textWrap="true" text="70-90/50-65" class="blacktext font22 textcenter"/>
+            <Label row="3" col="3" textWrap="true" text="30-45" class="blacktext font22 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="6-12 mo" class="blacktext font22 textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="80-120" class="blacktext font22 textcenter"/>
+            <Label row="4" col="2" textWrap="true" text="80-100/55-65" class="blacktext font22 textcenter"/>
+            <Label row="4" col="3" textWrap="true" text="25-40" class="blacktext font22 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="1-3 y" class="blacktext font22 textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="70-110" class="blacktext font22 textcenter"/>
+            <Label row="5" col="2" textWrap="true" text="90-105/55-70" class="blacktext font22 textcenter"/>
+            <Label row="5" col="3" textWrap="true" text="20-30" class="blacktext font22 textcenter"/>
+            <Label row="6" col="0" textWrap="true" text="3-6 yr" class="blacktext font22 textcenter"/>
+            <Label row="6" col="1" textWrap="true" text="65-110" class="blacktext font22 textcenter"/>
+            <Label row="6" col="2" textWrap="true" text="95-110/60-75" class="blacktext font22 textcenter"/>
+            <Label row="6" col="3" textWrap="true" text="20-25" class="blacktext font22 textcenter"/>
+            <Label row="7" col="0" textWrap="true" text="6-12 yr" class="blacktext font22 textcenter"/>
+            <Label row="7" col="1" textWrap="true" text="60-95" class="blacktext font22 textcenter"/>
+            <Label row="7" col="2" textWrap="true" text="100-120/60-75" class="blacktext font22 textcenter"/>
+            <Label row="7" col="3" textWrap="true" text="14-22" class="blacktext font22 textcenter"/>
+            <Label row="8" col="0" textWrap="true" text="12 &gt; yr" class="blacktext font22 textcenter"/>
+            <Label row="8" col="1" textWrap="true" text="55-85" class="blacktext font22 textcenter"/>
+            <Label row="8" col="2" textWrap="true" text="110-135/65-85" class="blacktext font22 textcenter"/>
+            <Label row="8" col="3" textWrap="true" text="12-18" class="blacktext font22 textcenter"/>
+            <Label row="9" col="0" colspan="4" textWrap="true" text="REF - Vital Signs at Various Ages\n* From Dieckmann R, Brownstein D, Gausche-Hill M (eds): Pediatric Education for Prehospital Professionals. Sudbury, Mass, Jones and Bartlett, American Academy of Pediatrics, 2000, pp 43-45" class="blacktext margin5 font22 bold textcenter"/>
+          </GridLayout>
+          <GridLayout rows="auto,auto,auto,auto,auto,auto" columns="*,*,*,*" visibility="{{ vitalspage==1? 'visible' : 'collapse' }}">
+            <Label row="0" col="0" textWrap="true" text="AGE" class="whitetext themebackground margin5 font22 bold textcenter"/>
+            <Label row="0" col="1" textWrap="true" text="ACTION RR" class="whitetext themebackground margin5 font22 bold textcenter"/>
+            <Label row="0" col="2" textWrap="true" text="ACTION BRADYCARDIA" class="whitetext themebackground margin5 font22 bold textcenter"/>
+            <Label row="0" col="3" textWrap="true" text="HYPOTENSION" class="whitetext themebackground margin5 font22 bold textcenter"/>
+            <Label row="1" col="0" textWrap="true" text="Term to 3 months" class="blacktext font22 textcenter"/>
+            <Label row="1" col="1" textWrap="true" text="&gt; 60 BPM" class="blacktext font22 textcenter"/>
+            <Label row="1" col="2" textWrap="true" text="&lt; 100 BPM" class="blacktext font22 textcenter"/>
+            <Label row="1" col="3" textWrap="true" text="&lt; 50 mm" class="blacktext font22 textcenter"/>
+            <Label row="2" col="0" textWrap="true" text="4 – 12 months" class="blacktext font22 textcenter"/>
+            <Label row="2" col="1" textWrap="true" text="&gt; 50 BPM" class="blacktext font22 textcenter"/>
+            <Label row="2" col="2" textWrap="true" text="&lt; 100 BPM" class="blacktext font22 textcenter"/>
+            <Label row="2" col="3" textWrap="true" text="&lt; 60 mm" class="blacktext font22 textcenter"/>
+            <Label row="3" col="0" textWrap="true" text="1 – 4 years" class="blacktext font22 textcenter"/>
+            <Label row="3" col="1" textWrap="true" text="&gt; 40 BPM" class="blacktext font22 textcenter"/>
+            <Label row="3" col="2" textWrap="true" text="&lt; 90 BPM" class="blacktext font22 textcenter"/>
+            <Label row="3" col="3" textWrap="true" text="&lt; 70 mm" class="blacktext font22 textcenter"/>
+            <Label row="4" col="0" textWrap="true" text="5 – 12 years" class="blacktext font22 textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="&gt; 30 BPM" class="blacktext font22 textcenter"/>
+            <Label row="4" col="2" textWrap="true" text="&lt; 80 BPM" class="blacktext font22 textcenter"/>
+            <Label row="4" col="3" textWrap="true" text="&lt; 80 mm" class="blacktext font22 textcenter"/>
+            <Label row="5" col="0" textWrap="true" text="&gt; 12 years" class="blacktext font22 textcenter"/>
+            <Label row="5" col="1" textWrap="true" text="&gt; 30 BPM" class="blacktext font22 textcenter"/>
+            <Label row="5" col="2" textWrap="true" text="&lt;60 BPM" class="blacktext font22 textcenter"/>
+            <Label row="5" col="3" textWrap="true" text="&lt; 90 mm" class="blacktext font22 textcenter"/>
+          </GridLayout>
+          <StackLayout visibility="{{ vitalspage==2? 'visible' : 'collapse' }}">
+            <Label textWrap="true" class="blacktext font24 bold textcenter" text="Key Values in Practice"/>
+            <Label textWrap="true" class="blacktext font24" text="{{ vitalscontentk1 }}"/>
+          </StackLayout>
+        </StackLayout>
+      </ScrollView>
+    </StackLayout>
+  </GridLayout>
+</page>

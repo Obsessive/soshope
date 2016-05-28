@@ -1,0 +1,77 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="abcofcprLoaded" unloaded="abcofcprUnloaded">
+  <GridLayout rows="auto,*" columns="*">
+    <GridLayout row="0" col="0" rows="auto" columns="auto,*,auto"  class="themebackground">
+    <Label row="0" col="0" id="left_id" text="  &#xf137;" class="fontsymbol themebackground whitetext textcenter font28 position"/>
+    <Label row="0" col="1" textWrap="true" text="{{ abcofcprtitle }}" class="themebackground whitetext textcenter font28"/>
+    <Label row="0" col="2" id="right_id" text="&#xf138;  " class="fontsymbol themebackground whitetext textcenter font28 position"/>
+    </GridLayout>
+    <StackLayout row="1" col="0" class="margin10">
+      <ScrollView>
+        <StackLayout>
+        <StackLayout visibility="{{ abcofcprpage==0? 'visible' : 'collapse' }}">
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontenta1 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="•Stable Airway"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontenta2 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="•Unstable but maintainable"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontenta3 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="•Unstable Not maintainable Position"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontenta4 }}"/>
+          <Image src="~/images/p1.jpg" class="horizontalcenter" stretch ="aspectFit"/>
+          <Label textWrap="true" class="horizontalcenter blacktext font24" text="HEAD TILT AND CHIN LIFT"/>
+          <Image src="~/images/p2.jpg" class="horizontalcenter" stretch ="aspectFit"/>
+          <Label textWrap="true" class="horizontalcenter blacktext font24" text="JAW THRUST MANEUVER"/>
+          <Image src="~/images/p4.jpg" class="horizontalcenter" stretch ="aspectFit"/>
+          <Label textWrap="true" class="horizontalcenter blacktext font24" text="ORAL AIRWAY"/>
+          <Image src="~/images/p6.jpg" class="horizontalcenter" stretch ="aspectFit"/>
+          <Label textWrap="true" class="horizontalcenter blacktext font24" text="LMA WITH BAG AND MASK"/>
+          <Image src="~/images/p8.jpg" class="horizontalcenter" stretch ="aspectFit"/>
+          <Image src="~/images/p9.jpg" class="horizontalcenter margin10" stretch ="aspectFit"/>
+          <Label textWrap="true" class="horizontalcenter blacktext font24" text="ENDOTRACHEAL TUBE"/>
+          <Image src="~/images/p10.jpg" class="horizontalcenter" stretch ="aspectFit"/>
+          <Image src="~/images/p11.jpg" class="horizontalcenter margin10" stretch ="aspectFit"/>
+        </StackLayout>
+        <StackLayout visibility="{{ abcofcprpage==1? 'visible' : 'collapse' }}">
+          <Label textWrap="true" class="blacktext font24 bold" text="•Assess noisy breathing"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentb1 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="stridor"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentb2 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="wheeze"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentb3 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="Hypoxemia"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentb4 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="Poor respiratory effort"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentb5 }}"/>
+          <Image src="~/images/p3.jpg" class="horizontalcenter margin10" stretch ="aspectFit"/>
+          <Label textWrap="true" class="horizontalcenter blacktext font24" text="BAG AND MASK VENTILATION"/>
+          <Image src="~/images/p12.jpg" class="horizontalcenter" stretch ="aspectFit"/>
+          <Label textWrap="true" class="horizontalcenter blacktext font24" text="LMA VENTILATION"/>
+          <Image src="~/images/p13.jpg" class="horizontalcenter" stretch ="aspectFit"/>
+          <Image src="~/images/p14.jpg" class="horizontalcenter margin10" stretch ="aspectFit"/>
+        </StackLayout>
+        <StackLayout visibility="{{ abcofcprpage==2? 'visible' : 'collapse' }}">
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentc1 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="•Infants"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentc2 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="•Children"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentc3 }}"/>
+          <Label textWrap="true" class="horizontalcenter blacktext font24" text="2 FINGERS TECHNIQUE"/>
+          <Image src="~/images/p15.jpg" class="horizontalcenter" stretch ="aspectFit"/>
+          <Label textWrap="true" class="horizontalcenter blacktext font24" text=" THUMB TECHNIQUE"/>
+          <Image src="~/images/p16.jpg" class="horizontalcenter" stretch ="aspectFit"/>
+          <Label textWrap="true" class="horizontalcenter blacktext font24" text="TWO HAND CHEST COMPRESSIONS"/>
+          <Image src="~/images/p17.jpg" class="horizontalcenter" stretch ="aspectFit"/>
+        </StackLayout>
+        <StackLayout visibility="{{ abcofcprpage==3? 'visible' : 'collapse' }}"> 
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentabc1 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="•Situation A)"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentabc2 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="•Situation B)"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentabc3 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="•Situation C)"/>
+          <Label textWrap="true" class="blacktext font24" text="{{ abcofcprcontentabc4 }}"/>
+        </StackLayout>
+      </StackLayout>
+      </ScrollView>
+    </StackLayout>
+  </GridLayout>
+</page>

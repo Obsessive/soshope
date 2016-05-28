@@ -1,0 +1,44 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="homeLoaded" unloaded="homeUnloaded">
+  <ActionBar title="SOS HOPE" horizontalAlignment="center">
+  <ActionItem tap="developedby" ios.position="right" android.text="Developed By" android.position="popup"/>
+</ActionBar>
+  <GridLayout rows="auto,*,*,*" columns="*,*,*" class="whitebackground">
+    <Label row="0" col="0" colspan="3" text="{{ welcome_name }}" textWrap="true" class="marginbottom6 horizontalcenter font34 blacktext textcenter"/>
+    <GridLayout id="procedure_id" row="1" col="0" rows="*,auto" columns="*" class="color1 margintop6 marginbottom3 marginleft6 marginright3">
+      <Image row="0" col="0" src="~/images/men.png" class="position margin15"/>
+      <Label row="1" col="0" text="TUTORIALS" textWrap="true" class="marginbottom6 horizontalcenter transparent font16 whitetext textcenter"/>
+    </GridLayout>
+    <GridLayout id="medications_id" row="1" col="1" rows="*,auto" columns="*" class="color2 margintop6 marginbottom3 marginleft3 marginright3">
+      <Image row="0" col="0" src="~/images/medical0.png" class="position margin15"/>
+      <Label row="1" col="0" text="MEDICATIONS" textWrap="true" class="marginbottom6 horizontalcenter transparent font16 whitetext textcenter"/>
+    </GridLayout>
+    <GridLayout id="equipments_id" row="1" col="2" rows="*,auto" columns="*" class="color3 margintop6 marginbottom3 marginleft3 marginright6">
+      <Image row="0" col="0" src="~/images/medical1.png" class="position margin15"/>
+      <Label row="1" col="0" text="EQUIPMENT" textWrap="true" class="marginbottom6 horizontalcenter transparent font16 whitetext textcenter"/>
+    </GridLayout>
+    <GridLayout id="clinicalconditions_id" row="2" col="0" rows="*,auto" columns="*" class="color4 margintop3 marginbottom3 marginleft6 marginright3">
+      <Image row="0" col="0" src="~/images/medical4.png" class="position margin15"/>
+      <Label row="1" col="0" text="CLINICAL CONDITIONS" textWrap="true" class="marginbottom6 horizontalcenter transparent font16 whitetext textcenter"/>
+    </GridLayout>
+    <GridLayout id="triage_id" row="2" col="1" rows="*,auto" columns="*" class="color5 margintop3 marginbottom3 marginleft3 marginright3">
+      <Image row="0" col="0" src="~/images/arrows1.png" class="position margin15"/>
+      <Label row="1" col="0" text="TRIAGE" textWrap="true" class="marginbottom6 horizontalcenter transparent font16 whitetext textcenter"/>
+    </GridLayout>
+    <GridLayout id="vitals_id" row="2" col="2" rows="*,auto" columns="*" class="color6 margintop3 marginbottom3 marginleft3 marginright6">
+      <Image row="0" col="0" src="~/images/medical3.png" class="position margin15"/>
+      <Label row="1" col="0" text="VITALS" textWrap="true" class="marginbottom6 horizontalcenter transparent font16 whitetext textcenter"/>
+    </GridLayout>
+    <GridLayout id="transport_id" row="3" col="0" rows="*,auto" columns="*" class="color7 margintop3 marginbottom6 marginleft6 marginright3">
+      <Image row="0" col="0" src="~/images/transport.png" class="position margin15"/>
+      <Label row="1" col="0" text="TRANSPORT" textWrap="true" class="marginbottom6 horizontalcenter transparent font16 whitetext textcenter"/>
+    </GridLayout>
+    <GridLayout id="abcofcpr_id" row="3" col="1" rows="*,auto" columns="*" class="color8 margintop3 marginbottom6 marginleft3 marginright3">
+      <Image row="0" col="0" src="~/images/people.png" class="position margin15"/>
+      <Label row="1" col="0" text="ABC OF CPR" textWrap="true" class="marginbottom6 horizontalcenter transparent font16 whitetext textcenter"/>
+    </GridLayout>
+    <GridLayout id="team_id" row="3" col="2" rows="*,auto" columns="*" class="color9 margintop3 marginbottom6 marginleft3 marginright6">
+      <Image row="0" col="0" src="~/images/person.png" class="position margin15"/>
+      <Label row="1" col="0" text="TEAM" textWrap="true" class="marginbottom6 horizontalcenter transparent font16 whitetext textcenter"/>
+    </GridLayout>
+  </GridLayout>
+</page>

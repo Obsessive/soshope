@@ -1,0 +1,233 @@
+action-bar {
+  background-color: #F44336;
+  color: white;
+}
+.drawer-content {
+  background-color: #2B2727;
+  color: white;
+  padding-top: 20;
+}
+.drawer-content label {
+  font-size: 20;
+  margin: 10 20 15 20;
+}
+.selected {
+  color: #F44336;
+}
+
+.horizontalcenter{
+  horizontal-align: center;
+}
+
+.verticalcenter{
+  vertical-align: center;
+}
+
+.width30{
+  width: 30;
+}
+
+.bold{
+  font-weight:bold;
+}
+
+.fontsymbol{
+  font-family: FontAwesome;
+}
+
+.transparent{
+  background-color: transparent;
+}
+
+.whitetext{
+  color: #ffffff;
+}
+
+.blacktext{
+  color: #000000;
+}
+
+.whitebackground{
+  background-color: white;
+}
+
+.darkbackground{
+  background-color: #2B2727;
+}
+
+.blackbackground{
+  background-color: black;
+}
+
+.themebackground{
+  background-color: #F44336;
+}
+
+.right{
+  horizontal-align: right;
+}
+
+.position{
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+.textcenter{
+  text-align: center;
+}
+
+.font34{
+  font-size: 34;
+}
+
+.font28{
+  font-size: 28;
+}
+
+.font26{
+  font-size: 26;
+}
+
+.font24{
+  font-size: 24;
+}
+
+.font22{
+  font-size: 22;
+}
+
+.font20{
+  font-size: 20;
+}
+
+.font18{
+  font-size: 18;
+}
+
+.font16{
+  font-size: 16;
+}
+
+.border3 {
+    border-radius: 3;
+}
+
+.margin3{
+  margin: 3;
+}
+
+.margin5{
+  margin: 5;
+}
+
+.margin10{
+  margin: 10;
+}
+
+.margin15{
+  margin: 15;
+}
+
+.marginleft10{
+  margin-left: 10;
+}
+
+.marginright10{
+  margin-right: 10;
+}
+
+.margintop10{
+  margin-top: 10;
+}
+
+.marginbottom10{
+  margin-bottom: 10;
+}
+
+.marginleft5{
+  margin-left: 5;
+}
+
+.marginright5{
+  margin-right: 5;
+}
+
+.margintop5{
+  margin-top: 5;
+}
+
+.marginbottom5{
+  margin-bottom: 5;
+}
+
+.marginleft6{
+  margin-left: 6;
+}
+
+.marginright6{
+  margin-right: 6;
+}
+
+.margintop6{
+  margin-top: 6;
+}
+
+.marginbottom6{
+  margin-bottom: 6;
+}
+
+.marginleft3{
+  margin-left: 3;
+}
+
+.marginright3{
+  margin-right: 3;
+}
+
+.margintop3{
+  margin-top: 3;
+}
+
+.marginbottom3{
+  margin-bottom: 3;
+}
+
+.padding5{
+  padding: 5;
+}
+
+.color1{
+  background-color: #2E7D32;
+}
+
+.color2{
+  background-color: #00695C;
+}
+
+.color3{
+  background-color: #D84315;
+}
+
+.color4{
+  background-color: #FF8F00;
+}
+
+.color5{
+  background-color: #C62828;
+}
+
+.color6{
+  background-color: #283593;
+}
+
+.color7{
+  background-color: #00838F;
+}
+
+.color8{
+  background-color: #6A1B9A;
+}
+
+.color9{
+  background-color: #AD1457;
+}

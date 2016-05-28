@@ -1,0 +1,11 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="disclaimerLoaded">
+  <GridLayout  rows="auto,*,auto" columns="*" class="whitebackground">
+    <Label row="0" col="0" text="DISCLAIMER" textWrap="true" class="blacktext font28 textcenter position"/>
+    <StackLayout row="1" col="0">
+      <ScrollView>
+        <Label text="Financial grant for this app is granted by Micro Labs Limited and Micro Labs Limited or the Doctors are  not responsible for the content and actions taken based on the information in the app.  The content of the App is only a ready reckoner and is to be practically used by qualified experts directly or under their supervision" textWrap="true" class="blacktext font22 textcenter position"/>
+      </ScrollView>
+    </StackLayout>
+    <Button row="2" col="0" text="CONTINUE" tap="{{ disclaimer_action }}" textWrap="true" class="themebackground whitetext border3 margin10"/>
+  </GridLayout>
+</page>

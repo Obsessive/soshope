@@ -1,0 +1,20 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="equipmentsLoaded" unloaded="equipmentsUnloaded">
+  <GridLayout rows="auto,*,auto" columns="*" >
+    <GridLayout row="0" col="0" rows="auto" columns="auto,*,auto"  class="themebackground">
+      <Label row="0" col="0" id="left_id" text="  &#xf137;" class="fontsymbol themebackground whitetext textcenter font28 position"/>
+      <Label row="0" col="1" textWrap="true" text="{{ equipmenttitle }}" class="themebackground whitetext textcenter font28 position"/>
+      <Label row="0" col="2" id="right_id" text="&#xf138;  " class="fontsymbol themebackground whitetext textcenter font28 position"/>
+    </GridLayout>
+    <StackLayout row="1" col="0" class="margin10">
+      <ScrollView>
+        <StackLayout>
+          <Label visibility="{{ equipmentpage == 0 ? 'visible' : 'collapsed' }}" textWrap="true" text="{{ equipmentcontent1 }}" class="font24 blacktext"/>
+          <Label visibility="{{ equipmentpage == 1 ? 'visible' : 'collapsed' }}" textWrap="true" text="{{ equipmentcontent2 }}" class="font24 blacktext"/>
+          <Label visibility="{{ equipmentpage == 2 ? 'visible' : 'collapsed' }}" textWrap="true" text="{{ equipmentcontent3 }}" class="font24 blacktext"/>
+          <Label visibility="{{ equipmentpage == 3 ? 'visible' : 'collapsed' }}" textWrap="true" text="{{ equipmentcontent4 }}" class="font24 blacktext"/>
+        </StackLayout>
+      </ScrollView>
+    </StackLayout>
+    <Button row="2" col="0" tap="{{ equipment_sizing_chart_action }}" textWrap="true" text="EQUIPMENT SIZING CHART" class="themebackground whitetext margin10 border3"/>
+  </GridLayout>
+</page>

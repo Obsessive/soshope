@@ -1,0 +1,426 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="detailsLoaded" unloaded="detailsUnloaded">
+    <GridLayout rows="auto,*" columns="*">
+      <GridLayout row="0" col="0" rows="auto" columns="auto,*,auto"  class="themebackground">
+        <Label row="0" col="0" id="left_id" text="  &#xf137;" class="fontsymbol themebackground whitetext textcenter font28 position"/>
+        <Label row="0" col="1" textWrap="true" text="{{ detailstitle }}" class="themebackground whitetext textcenter font28"/>
+        <Label row="0" col="2" id="right_id" text="&#xf138;  " class="fontsymbol themebackground whitetext textcenter font28 position"/>
+      </GridLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Anaphylaxis' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Anaphylaxis1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Anaphylaxis2 }}"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="• Respiratory compromise"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Anaphylaxis3 }}"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="OR"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="Reduced blood pressure (BP)"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="•Note"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Anaphylaxis4 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Anaphylaxis5 }}"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="NOTE:"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Anaphylaxis11 }}"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="Criterion 3"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Anaphylaxis6 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 3 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24 bold" text="1st-line treatment: "/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Anaphylaxis7 }}"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="2nd-line treatment: "/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Anaphylaxis8 }}"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="3rd -line treatment:"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="H1- and H2-antihistamines:"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Anaphylaxis9 }}"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="Glucocorticosteroids:"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Anaphylaxis10 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Animal bite' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+          <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+            <Label textWrap="true" class="blacktext font24" text="{{ Animalbite1 }}"/>
+            <Label textWrap="true" class="blacktext font24 bold" text="Vaccine"/>
+            <Label textWrap="true" class="blacktext font24" text="{{ Animalbite2 }}"/>
+            <Image src="~/images/t.jpg" class="position margintop10" stretch ="aspectFit"/>
+          </StackLayout>
+          <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+            <Label textWrap="true" class="blacktext font24" text="{{ Animalbite3 }}"/>
+          </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Cardiogenic shock' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24 bold" text="Shock - Cardiogenic"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Cardiogenicshock1 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Epistaxis' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Epistaxis1 }}"/>
+              <Image src="~/images/algo.png" class="position margintop10" stretch ="aspectFit"/>
+              <Image src="~/images/v.jpg" class="position margintop10" stretch ="aspectFit"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Excessive crying' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24 bold" text="11 rules in managing Crying Child"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Excessivecrying1 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Foreign body' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24 bold" text="Infants"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Foreignbody1 }}"/>
+              <Image src="~/images/r.jpg" class="position margintop10" stretch ="aspectFit"/>
+              <Image src="~/images/c.jpg" class="position margintop10" stretch ="aspectFit"/>
+              <Image src="~/images/w.jpg" class="position margintop10" stretch ="aspectFit"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Ingestions' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Ingestions1 }}"/>
+              <Image src="~/images/b.jpg" class="position margintop10" stretch ="aspectFit"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Ingestions2 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Non cardiogenic shock' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24 bold" text="Shock Non cardiogenic"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Noncardiogenicshock1 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Scorpion bite' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Scorpionbite1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Scorpionbite2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Scorpionbite3 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Seizures' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Seizures1 }}"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="OR"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Seizures2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Seizures3 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Seizures4 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 3 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Seizures5 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Snake bite' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Snakebite1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24 bold" text="Systemic envenomation"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Snakebite2 }}"/>
+              <Label textWrap="true" class="blacktext font24 bold" text="Severe Current Local Swelling"/>
+              <Label textWrap="true" class="blacktext font24" text="{{ Snakebite3 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ Snakebite4 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Asthma MILD' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ AsthmaMILD1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ AsthmaMILD2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ AsthmaMILD3 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Asthma MODERATE' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ AsthmaMODERATE1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ AsthmaMODERATE2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ AsthmaMODERATE3 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 3 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ AsthmaMODERATE4 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Asthma SEVERE' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ AsthmaSEVERE1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ AsthmaSEVERE2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ AsthmaSEVERE3 }}"/>
+            </StackLayout> 
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Croup MILD' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ CroupMILD1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ CroupMILD2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ CroupMILD3 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Croup MODERATE' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ CroupMODERATE1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ CroupMODERATE2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ CroupMODERATE3 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 3 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ CroupMODERATE4 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Croup SEVERE' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ CroupSEVERE1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ CroupSEVERE2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ CroupSEVERE3 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Diarrhea NO DEHYDRATION' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ DiarrheaNODEHYDRATION1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ DiarrheaNODEHYDRATION2 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Diarrhea SOME DEHYDRATION' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ DiarrheaSOMEDEHYDRATION1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ DiarrheaSOMEDEHYDRATION2 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Diarrhea SEVERE DEHYDRATION' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ DiarrheaSEVEREDEHYDRATION1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ DiarrheaSEVEREDEHYDRATION2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ DiarrheaSEVEREDEHYDRATION3 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Fever GREEN' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ FeverGREEN1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ FeverGREEN2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ FeverGREEN3 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Fever YELLOW' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ FeverYELLOW1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ FeverYELLOW2 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Fever RED' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ FeverRED1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ FeverRED2 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Pneumonia PNEUMONIA' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ PneumoniaPNEUMONIA1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ PneumoniaPNEUMONIA2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ PneumoniaPNEUMONIA3 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Pneumonia SEVERE PNEUMONIA' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ PneumoniaSEVEREPNEUMONIA1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ PneumoniaSEVEREPNEUMONIA2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ PneumoniaSEVEREPNEUMONIA3 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Pneumonia VERY SEVERE PNEUMONIA' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ PneumoniaVERYSEVEREPNEUMONIA1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ PneumoniaVERYSEVEREPNEUMONIA2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ PneumoniaVERYSEVEREPNEUMONIA3 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Head injury MILD' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ HeadinjuryMILD1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ HeadinjuryMILD2 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ HeadinjuryMILD3 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+      <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Head injury SEVERE' ? 'visible' : 'collapse' }}">
+        <ScrollView>
+          <StackLayout>
+            <StackLayout visibility="{{ detailspage== 0 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ HeadinjurySEVERE1 }}"/>
+            </StackLayout>
+            <StackLayout visibility="{{ detailspage== 1 ? 'visible' : 'collapse' }}">
+              <Label textWrap="true" class="blacktext font24" text="{{ HeadinjurySEVERE2 }}"/>
+            </StackLayout>
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+    </GridLayout>
+</page>
