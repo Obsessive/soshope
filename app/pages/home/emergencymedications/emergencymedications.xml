@@ -1,10 +1,6 @@
 <page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:dd="nativescript-drop-down" loaded="emergencymedicationsLoaded">
   <StackLayout>
   	<dd:DropDown items="{{ med_items }}" id="med" selectedIndex="{{ med_selectedIndex }}" class="margin15 font18 blacktext" />
-  	<!-- <GridLayout rows="auto" columns="*,auto">
-  		<TextView row="0" col="0" hint="WEIGHT" id="id_weight" class="margin5 blacktext"/>
-  		<Button row="0" col="1" text="CALCULATE" tap="{{ calculate_action }}" class="themebackground border3 whitetext" keyboardType="phone"/>
-  	</GridLayout> -->
   	<ScrollView>
   		<StackLayout class="margin10">
   			<StackLayout visibility="{{ medpage== 0 ? 'visible' : 'collapse' }}">

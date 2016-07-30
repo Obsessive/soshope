@@ -1,9 +1,13 @@
 <page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="triageLoaded" unloaded="triageUnloaded">
   <GridLayout rows="auto,*" columns="*">
     <GridLayout row="0" col="0" rows="auto" columns="auto,*,auto"  class="themebackground">
-      <Label row="0" col="0" id="left_id" text="  &#xf137;" class="fontsymbol themebackground whitetext textcenter font28 position"/>
+      <WrapLayout row="0" col="0" id="left_id">
+        <Label text="  &#xf137;" class="fontsymbol themebackground whitetext textcenter font28 position"/>
+      </WrapLayout>
       <Label row="0" col="1" textWrap="true" text="{{ triagetitle }}" class="themebackground whitetext textcenter font28"/>
-      <Label row="0" col="2" id="right_id" text="&#xf138;  " class="fontsymbol themebackground whitetext textcenter font28 position"/>
+      <WrapLayout row="0" col="2" id="right_id">
+        <Label text="&#xf138;  " class="fontsymbol themebackground whitetext textcenter font28 position"/>
+      </WrapLayout>
     </GridLayout>
     <StackLayout row="1" col="0" class="margin10">
       <ScrollView>

@@ -1,9 +1,13 @@
 <page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="detailsLoaded" unloaded="detailsUnloaded">
     <GridLayout rows="auto,*" columns="*">
       <GridLayout row="0" col="0" rows="auto" columns="auto,*,auto"  class="themebackground">
-        <Label row="0" col="0" id="left_id" text="  &#xf137;" class="fontsymbol themebackground whitetext textcenter font28 position"/>
+        <WrapLayout row="0" col="0" id="left_id">
+          <Label text="  &#xf137;" class="fontsymbol themebackground whitetext textcenter font28 position"/>
+        </WrapLayout>
         <Label row="0" col="1" textWrap="true" text="{{ detailstitle }}" class="themebackground whitetext textcenter font28"/>
-        <Label row="0" col="2" id="right_id" text="&#xf138;  " class="fontsymbol themebackground whitetext textcenter font28 position"/>
+        <WrapLayout row="0" col="2" id="right_id">
+          <Label text="&#xf138;  " class="fontsymbol themebackground whitetext textcenter font28 position"/>
+        </WrapLayout>
       </GridLayout>
       <StackLayout row="1" col="0" class="margin10" visibility="{{ detailsdisplay== 'Anaphylaxis' ? 'visible' : 'collapse' }}">
         <ScrollView>
@@ -220,7 +224,7 @@
             </StackLayout>
             <StackLayout visibility="{{ detailspage== 2 ? 'visible' : 'collapse' }}">
               <Label textWrap="true" class="blacktext font24" text="{{ AsthmaSEVERE3 }}"/>
-            </StackLayout> 
+            </StackLayout>
           </StackLayout>
         </ScrollView>
       </StackLayout>
