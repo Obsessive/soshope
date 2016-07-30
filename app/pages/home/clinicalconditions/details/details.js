@@ -1,7 +1,9 @@
 var FrameModule = require("ui/frame");
 var observable = require("data/observable");
 var ObservableArray = require('data/observable-array');
+var utilities = require("utils/utils");
 var page,id,pageno=0;
+var self;
 var Anaphylaxisarray = ["DEFINITION","CRITERION 1","CRITERION 2 AND 3","TREATMENT"];
 var Animalbitearray = ["FIRST AID AND VACCINE","RIG (RABIES IMMUNOGLOBULIN)"];
 var Cardiogenicshockarray = ["SHOCK–CARDIOGENIC"];
@@ -694,4 +696,5 @@ unset_tap_listener = function(){
 exports.detailsUnloaded = function() {
   pageno=0;
   unset_tap_listener();
+  utilities.GC();
 };

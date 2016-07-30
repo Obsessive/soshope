@@ -14,7 +14,7 @@
             <Label row="3" col="0" textWrap="true" text="Oral Airway(mm)" class="blacktext margin5 font20 margin5 bold textcenter"/>
             <Label row="3" col="1" textWrap="true" text="40" class="blacktext font20 margin5 textcenter"/>
             <Label row="4" col="0" textWrap="true" text="Laryngoscope Blade (size)" class="blacktext margin5 font20 margin5 bold textcenter"/>
-            <Label row="4" col="1" textWrap="true" text="&lt;2 kg: 0 straight \n &gt; 2 kg: 1 straight" class="blacktext font20 margin5 textcenter"/>
+            <Label row="4" col="1" textWrap="true" text="&lt;2 kg: 0 straight &gt; 2 kg: 1 straight" class="blacktext font20 margin5 textcenter"/>
             <Label row="5" col="0" textWrap="true" text="ET Tube (mm)†" class="blacktext margin5 font20 margin5 bold textcenter"/>
             <Label row="5" col="1" textWrap="true" text="&lt; 1 Kg 2.5 Uncuffed,1-2 Kg 3.0 Uncuffed" class="blacktext font20 margin5 textcenter"/>
             <Label row="6" col="0" textWrap="true" text="ET Tube Insertion Length (cm)" class="blacktext margin5 font20 margin5 bold textcenter"/>

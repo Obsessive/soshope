@@ -2,7 +2,8 @@ var FrameModule = require("ui/frame");
 var observable = require("data/observable");
 var appSettings = require("application-settings");
 var dialogs = require("ui/dialogs");
-var page;
+var utilities = require("utils/utils");
+var page,self;
 function homeLoaded(args) {
 page = args.object;
 var homeModel = (function (_super) {
@@ -10,8 +11,9 @@ var homeModel = (function (_super) {
     function homeModel() {
         _super.call(this);
 	      self=this;
+        console.log("home");
         self.set_tap_listener();
-        self.set("welcome_name","HI "+ appSettings.getString("name"));
+        self.set("welcome_name","HI "+ appSettings.getString("name").toString());
     }
 
     homeModel.prototype.set_tap_listener = function(){
@@ -89,7 +91,9 @@ page.bindingContext = new homeModel();
 exports.homeLoaded = homeLoaded;
 
 exports.homeUnloaded = function() {
-    self.unset_tap_listener();
+  console.log("homeUnloaded is activated");
+  self.unset_tap_listener();
+  utilities.GC();
 };
 
 exports.developedby = function () {

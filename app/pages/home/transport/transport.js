@@ -1,6 +1,6 @@
 var FrameModule = require("ui/frame");
 var observable = require("data/observable");
-var page;
+var page,self;
 function transportLoaded(args) {
 page = args.object;
 var transportModel = (function (_super) {

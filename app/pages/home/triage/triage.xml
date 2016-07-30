@@ -19,6 +19,8 @@
           <StackLayout visibility="{{ triagepage==2? 'visible' : 'collapse' }}">
             <Label textWrap="true" class="blacktext font24 bold" text="What to do? Mild or No Impairment of any Parameter"/>
             <Label textWrap="true" class="blacktext font24" text="{{ triagecontent3 }}"/>
+            <Label textWrap="true" class="blacktext font24 bold" text="There are Always Exceptions in any Rule"/>
+            <Label textWrap="true" class="blacktext font24" text="{{ triagecontent4 }}"/>
           </StackLayout>
           <StackLayout visibility="{{ triagepage==3? 'visible' : 'collapse' }}">
             <Label textWrap="true" class="blacktext font24 bold" text="Beware"/>

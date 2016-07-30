@@ -3,7 +3,7 @@ var observable = require("data/observable");
 var observableArray = require("data/observable-array");
 var Toast = require("nativescript-toast");
 var textViewModule=require("ui/text-view");
-var page,meditems;
+var page,meditems,self;
 var med_array = ["Select the medication",
 "ADRENALINE/EPINEPHRINE",
 "ANTI SNAKE VENOM",
@@ -65,8 +65,9 @@ var emergencymedicationsModel = (function (_super) {
       self.set("adrenalin1","How to make 1: 10000 solution? \n Take 1ml of 1:1000 and mix with 9 ml of normal saline this will give 1: 10000 \n 1ml – 0.1mg \n ");
       self.set("adrenalin2","EpiPen: Delivers a single 0.3 mg (0.3ml) dose \n EpiPen Jr: Delivers a single 0.15 mg (0.3ml) dose");
       self.set("adrenalin3","Epimephrine :  0.01 ml / kg /dose of 1:1000 - IM ( Antero Lateral Thigh only ) up to a max.dose  of  0.5 ml / dose  every  5 - 15 min, if needed, ");
-      self.set("adrenalin4","Intra Venous / Intraosseous -  0.1-0.3 ml/kg of 1:10,000 solution – may be repeat every 3-5 min as needed \n Intra Tracheal – 0.1ml / kg of 1:1000 solution may repeat every 3 – 5 min if needed \n Continous Inotropic Support   : 0.1 – 1 mcg / kg / min continuous infusion – titrate dosage as per desired effect  \n Calculation – 0.6 X Body Weight ( KG) is the mg added to make 100ml  \n This will give 0.1mcg/kg/hour = 0.1mg/kg/min \n ");
-      self.set("adrenalin5","Bronchodilator: 1:1000 (aqueous):\nInfant and child: 0.01ml/kg/dose SC (max. single dose 0.5mL); repeat Q15min x 3-4 doses or Q4 hr if required\nCROUP = Nebulization - L-epinephrine (using parenteral 1 mg/mL solution): Nebulization: 0.3 - 0.5 mL/kg of 1:1,000 solution (maximum dose: 5 mL) diluted in NS, may repeat dose every 20 minutes; \n");
+      self.set("adrenalin4","\nIntra Venous / Intraosseous -  0.1-0.3 ml/kg of 1:10,000 solution – may be repeat every 3-5 min as needed \n\n Intra Tracheal – 0.1ml / kg of 1:1000 solution may repeat every 3 – 5 min if needed \n");
+      self.set("adrenalin5","\nBronchodilator: 1:1000 (aqueous):\n\nInfant and child: 0.01ml/kg/dose SC (max. single dose 0.5mL); repeat Q15min x 3-4 doses or Q4 hr if required\n\nCROUP = Nebulization - L-epinephrine (using parenteral 1 mg/mL solution): Nebulization: 0.3 - 0.5 mL/kg of 1:1,000 solution (maximum dose: 5 mL) diluted in NS, may repeat dose every 20 minutes; \n");
+      self.set("adrenalin6","Continous Inotropic Support   : 0.1 – 1 mcg / kg / min continuous infusion – titrate dosage as per desired effect  \n Calculation – 0.6 X Body Weight ( KG) is the mg added to make 100ml  \n This will give 0.1mcg/kg/hour = 0.1mg/kg/min \n");
       self.set("snakebite1","Available as lyophilized powder form and liquid form \n 8 – 10 vials of ASV diluted in 5–10 ml per kg body weight of normal saline or D5 W and infused over 1 h \n No need for test dose \n 1.	A repeat dose of ASV should be given when there is persistence of blood incoagulability even after 6 h or continued bleeding after 1–2 h of the initial dose.  \n 2.	When there are worsening neurotoxic or cardiovascular signs even after 1–2 h \n ");
       self.set("dexamethasone1","Available as 1ml – 4mg");
       self.set("dexamethasone2","Oral, IM, IV: 0.6 mg/kg once daily as a single dose or once daily for 2 days; maximum dose: 16 mg/dose\nNote: Duration greater than 2 days is not recommended due to increased risk of metabolic effects (GINA, 2014).\n");

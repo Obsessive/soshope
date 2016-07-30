@@ -16,6 +16,7 @@
   				<Label textWrap="true" class="blacktext font24" text="{{ adrenalin3 }}"/>
   				<Label textWrap="true" class="blacktext font24 bold" text="Asystole or Bradycardia"/>
   				<Label textWrap="true" class="blacktext font24" text="{{ adrenalin4 }}"/>
+          <Label textWrap="true" class="blacktext font24 bold" text="{{ adrenalin6 }}"/>
   				<Label textWrap="true" class="blacktext font24 bold" text="Respiratory uses:"/>
   				<Label textWrap="true" class="blacktext font24" text="{{ adrenalin5 }}"/>
   			</StackLayout>
