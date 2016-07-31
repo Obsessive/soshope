@@ -1,6 +1,7 @@
 var FrameModule = require("ui/frame");
 var observable = require("data/observable");
 var observableArray = require("data/observable-array");
+var application =require("application");
 if (application.android) {
   var Toast = require("nativescript-toast");
 }
