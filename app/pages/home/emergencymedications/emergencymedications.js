@@ -1,7 +1,9 @@
 var FrameModule = require("ui/frame");
 var observable = require("data/observable");
 var observableArray = require("data/observable-array");
-var Toast = require("nativescript-toast");
+if (application.android) {
+  var Toast = require("nativescript-toast");
+}
 var textViewModule=require("ui/text-view");
 var page,meditems,self;
 var med_array = ["Select the medication",
@@ -52,10 +54,14 @@ var emergencymedicationsModel = (function (_super) {
       	if (page.getViewById("id_weight").text !== "") {
       	self.set("medpage",page.getViewById("med").selectedIndex-1);
       }else{
-      	Toast.makeText("Enter the weight","long").show();
+      	if (application.android) {
+          Toast.makeText("Enter the weight","long").show();
+        }
       }
       }else{
-      	Toast.makeText("Select the medication","long").show();
+      	if (application.android) {
+          Toast.makeText("Select the medication","long").show();
+        }
       }
 
   };
