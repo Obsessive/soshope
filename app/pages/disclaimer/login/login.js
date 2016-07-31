@@ -1,9 +1,11 @@
 var FrameModule = require("ui/frame");
 var observable = require("data/observable");
-var Toast = require("nativescript-toast");
 var fetchModule = require("fetch");
 var connectivity = require("connectivity");
 var application =require("application");
+if (application.android) {
+  var Toast = require("nativescript-toast");
+}
 var appSettings = require("application-settings");
 var LoadingIndicator = require("nativescript-loading-indicator").LoadingIndicator;
 var page,self,options;
