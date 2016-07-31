@@ -1,7 +1,7 @@
 var FrameModule = require("ui/frame");
 var observable = require("data/observable");
 var appSettings = require("application-settings");
-var page,timer;
+var page,timer,self;
 function splashscreenLoaded(args) {
 page = args.object;
 var splashscreenModel = (function (_super) {
@@ -14,11 +14,11 @@ var splashscreenModel = (function (_super) {
             moduleName: "pages/home/home",
             clearHistory: true
           };
-          // if (appSettings.getBoolean("firsttime", false)) {
-          // 	application.mainModule = "pages/home/home";
-          // }else{
-          // 	application.mainModule = "pages/disclaimer/disclaimer";
-          // }
+          if (appSettings.getBoolean("firsttime", false)) {
+          	navigationEntry.moduleName = "pages/home/home";
+          }else{
+          	navigationEntry.moduleName = "pages/disclaimer/disclaimer";
+          }
           FrameModule.topmost().navigate(navigationEntry);
         },3000);
     }

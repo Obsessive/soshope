@@ -45,9 +45,8 @@
     <Label textWrap="true" class="blacktext textcenter font18 position" text="East Zone Co-ordinator SOS-HOPE 2016"/>
     <Label textWrap="true" class="blacktext textcenter font24 position" text="Consultant pediatrician Gawahati"/>
     <Image src="~/images/micro.png" class="position margin10" stretch ="none"/>
-    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Dilip surana"/>
-    <Label textWrap="true" class="blacktext textcenter font18 position" text="Chairman Microlabs"/>
-    <Label textWrap="true" class="blacktext textcenter font24 position" text="Man with kind heart and good intentions"/>
+    <Label textWrap="true" class="blacktext textcenter font28 bold position" text="Makers of"/>
+    <Image src="~/images/dolo.png" class="position margin10" stretch ="aspectFit"/>
   </StackLayout>
 </ScrollView>
 </page>

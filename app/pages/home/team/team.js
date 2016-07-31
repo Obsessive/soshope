@@ -1,6 +1,6 @@
 var FrameModule = require("ui/frame");
 var observable = require("data/observable");
-var page;
+var page,self;
 function teamLoaded(args) {
 page = args.object;
 var teamModel = (function (_super) {

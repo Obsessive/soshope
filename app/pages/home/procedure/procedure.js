@@ -3,7 +3,7 @@ var utilityModule = require("utils/utils");
 var observable = require("data/observable");
 var Toast = require("nativescript-toast");
 var connectivity = require("connectivity");
-var page;
+var page,self;
 function procedureLoaded(args) {
 page = args.object;
 var procedureModel = (function (_super) {
@@ -249,7 +249,7 @@ var procedureModel = (function (_super) {
         Toast.makeText("Please check your internet connection","long").show();
       }else {
         console.log("yes");
-        utilityModule.openUrl("https://www.youtube.com/watch?v=e6Dia7GZKf0");
+        utilityModule.openUrl("https://www.youtube.com/watch?v=IWpBmg4DCQw");
       }
     };
 
@@ -260,7 +260,7 @@ var procedureModel = (function (_super) {
         Toast.makeText("Please check your internet connection","long").show();
       }else {
         console.log("yes");
-        utilityModule.openUrl("https://www.youtube.com/watch?v=IWpBmg4DCQw");
+        utilityModule.openUrl("https://www.youtube.com/watch?v=e6Dia7GZKf0");
       }
     };
 

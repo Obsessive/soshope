@@ -1,8 +1,8 @@
 var FrameModule = require("ui/frame");
 var observable = require("data/observable");
 var observableArray = require("data/observable-array");
-var page;
-var weightarray=["Select your weight","< 3Kg","3 to 5 Kg","Small Infant 8 to 9 Kg","Infant 6 to 7 Kg","Toddler 10 to 11 Kg","Small child 12 to 14 Kg","Child 15 to 18 Kg","Child 19 to 23 Kg","Large Child 24 to 29 Kg","Adult 30 to 36 Kg"];
+var page,self;
+var weightarray=["Select your weight","< 3Kg","3 to 5 Kg","Infant 6 to 7 Kg","Small Infant 8 to 9 Kg","Toddler 10 to 11 Kg","Small child 12 to 14 Kg","Child 15 to 18 Kg","Child 19 to 23 Kg","Large Child 24 to 29 Kg","Adult 30 to 36 Kg"];
 function equipmentsizingchartLoaded(args) {
 page = args.object;
 var equipmentsizingchartModel = (function (_super) {

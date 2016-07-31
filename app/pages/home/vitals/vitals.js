@@ -1,6 +1,6 @@
 var FrameModule = require("ui/frame");
 var observable = require("data/observable");
-var page;
+var page,self;
 var pageno=0;
 var titlearray=["NORMAL VALUES","ACUTE VALUES","KEY VALUES"];
 function vitalsLoaded(args) {

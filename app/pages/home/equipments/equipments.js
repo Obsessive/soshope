@@ -1,6 +1,6 @@
 var FrameModule = require("ui/frame");
 var observable = require("data/observable");
-var page;
+var page,self;
 var pageno=0;
 var titlearray=["AIRWAY AND BREATHING","VASCULAR ACCESS AND FLUIDS","PERSONAL PROTECTIVE EQUIPMENT","MISCELLANEOUS"];
 function equipmentsLoaded(args) {
