@@ -26,6 +26,7 @@ var equipmentsizingchartModel = (function (_super) {
          weightitems.push(weightarray[i].toString());
        }
        self.set("weightitems", weightitems);
+       self.set("weightselectedIndex", 0);
     };
 
     return equipmentsizingchartModel;

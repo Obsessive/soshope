@@ -5,7 +5,9 @@ var fetchModule = require("fetch");
 var connectivity = require("connectivity");
 var application =require("application");
 var appSettings = require("application-settings");
-var page,self;
+var LoadingIndicator = require("nativescript-loading-indicator").LoadingIndicator;
+var page,self,options;
+var loader = new LoadingIndicator();
 function loginLoaded(args) {
   page = args.object;
   var loginModel = (function (_super) {
@@ -13,7 +15,33 @@ function loginLoaded(args) {
     function loginModel() {
       _super.call(this);
       self=this;
+      self.bootstrap();
     }
+
+    loginModel.prototype.bootstrap = function () {
+      console.log("bootstrap is activated");
+      options = {
+        message: 'Loading...',
+        progress: 0.65,
+        android: {
+          indeterminate: true,
+          cancelable: false,
+          max: 100,
+          progressNumberFormat: "%1d/%2d",
+          progressPercentFormat: 0.53,
+          progressStyle: 1,
+          secondaryProgress: 1
+        },
+        ios: {
+          details: "If the loader gets stuck quit the app and open it again",
+          square: false,
+          margin: 10,
+          dimBackground: true,
+          color: "#4B9ED6",
+          mode: "MBProgressHUDModeAnnularDeterminate"
+        }
+      };
+    };
 
     loginModel.prototype.connect = function () {
       //check internet connection
@@ -37,6 +65,7 @@ function loginLoaded(args) {
 
     loginModel.prototype.login_action = function(){
       console.log("login_action is activated");
+      loader.show(options);
       var name = page.getViewById("id_name").text;
       var phone = page.getViewById("id_phone").text;
       var email = page.getViewById("id_email").text;
@@ -52,6 +81,7 @@ function loginLoaded(args) {
             {
              appSettings.setBoolean("firsttime", true);
              appSettings.setString("name", name);
+             loader.hide();
              var navigationEntry = {
               moduleName: "pages/home/home",
               animated: true,

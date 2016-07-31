@@ -13,7 +13,7 @@ var homeModel = (function (_super) {
 	      self=this;
         console.log("home");
         self.set_tap_listener();
-        self.set("welcome_name","HI "+ appSettings.getString("name").toString());
+        self.set("welcome_name","HI "+ appSettings.getString("name"));
     }
 
     homeModel.prototype.set_tap_listener = function(){

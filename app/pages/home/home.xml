@@ -1,6 +1,6 @@
 <page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="homeLoaded" unloaded="homeUnloaded">
   <ActionBar title="SOS HOPE" horizontalAlignment="center">
-  <ActionItem tap="developedby" ios.position="right" android.text="Developed By" android.position="popup"/>
+  <ActionItem tap="developedby" ios.position="right" ios.systemIcon="23" text="Developed By" android.position="popup"/>
 </ActionBar>
   <GridLayout rows="auto,*,*,*" columns="*,*,*" class="whitebackground">
     <Label row="0" col="0" colspan="3" text="{{ welcome_name }}" textWrap="true" class="marginbottom6 horizontalcenter font34 blacktext textcenter"/>
