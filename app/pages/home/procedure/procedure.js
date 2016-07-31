@@ -1,7 +1,10 @@
 var FrameModule = require("ui/frame");
 var utilityModule = require("utils/utils");
 var observable = require("data/observable");
-var Toast = require("nativescript-toast");
+var application =require("application");
+if (application.android) {
+  var Toast = require("nativescript-toast");
+}
 var connectivity = require("connectivity");
 var page,self;
 function procedureLoaded(args) {
@@ -37,7 +40,9 @@ var procedureModel = (function (_super) {
       console.log("iap_presidential_address_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=W4xd18AymCw");
@@ -48,7 +53,9 @@ var procedureModel = (function (_super) {
       console.log("introduction_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=QHO3xUP_A-g");
@@ -59,7 +66,9 @@ var procedureModel = (function (_super) {
       console.log("recognition_of_a_sick_child_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=TBzWZmWrWbw");
@@ -70,7 +79,9 @@ var procedureModel = (function (_super) {
       console.log("stabilization_of_a_sick_child_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+         Toast.makeText("Please check your internet connection","long").show();
+       }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=77-__XHNEFs");
@@ -81,7 +92,9 @@ var procedureModel = (function (_super) {
       console.log("steri_strips_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=zNKtRHLviKM");
@@ -92,7 +105,9 @@ var procedureModel = (function (_super) {
       console.log("circulation_emergencies_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+         Toast.makeText("Please check your internet connection","long").show();
+       }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=s6lf1jm3qRQ");
@@ -103,7 +118,9 @@ var procedureModel = (function (_super) {
       console.log("seizures_and_unconscious_child_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=07OggIDlQwI");
@@ -114,7 +131,9 @@ var procedureModel = (function (_super) {
       console.log("anaphylaxis_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=_o0WZ5rhh5Y");
@@ -125,7 +144,9 @@ var procedureModel = (function (_super) {
       console.log("fever_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=uHp-wWHhqxg");
@@ -136,7 +157,9 @@ var procedureModel = (function (_super) {
       console.log("minor_head_injury_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=xCVE0ci07s0");
@@ -147,7 +170,9 @@ var procedureModel = (function (_super) {
       console.log("pattern_of_crying_and_recognition_of_illness_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=ZH701H7ynWc");
@@ -158,7 +183,9 @@ var procedureModel = (function (_super) {
       console.log("bites_and_stings_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=rBfs7Iv7Nds");
@@ -169,7 +196,9 @@ var procedureModel = (function (_super) {
       console.log("pulled_elbow_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=4r6xMrjlGNg");
@@ -180,7 +209,9 @@ var procedureModel = (function (_super) {
       console.log("skin_clues_to_emergencies_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=uqk_BuaJPV0");
@@ -191,7 +222,9 @@ var procedureModel = (function (_super) {
       console.log("epistaxis_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=oNJALypFKIM");
@@ -202,7 +235,9 @@ var procedureModel = (function (_super) {
       console.log("ingestion_of_toxins_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=wdIAPhyF9cE");
@@ -213,7 +248,9 @@ var procedureModel = (function (_super) {
       console.log("cpr_procedure_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=X1mFmCvJdGA");
@@ -224,7 +261,9 @@ var procedureModel = (function (_super) {
       console.log("lma_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=hapjLpCZyLw");
@@ -235,7 +274,9 @@ var procedureModel = (function (_super) {
       console.log("intraosseous_cannulation_procedure_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=MWhinuGMxT0");
@@ -246,7 +287,9 @@ var procedureModel = (function (_super) {
       console.log("demonstration_of_inhaler_for_child_less_than_4_years_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=IWpBmg4DCQw");
@@ -257,7 +300,9 @@ var procedureModel = (function (_super) {
       console.log("demonstration_of_inhaler_for_child_more_than_4_years_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=e6Dia7GZKf0");
@@ -268,7 +313,9 @@ var procedureModel = (function (_super) {
       console.log("foreign_body_removal_procedure_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=Dk8UDzwUOXk");
@@ -279,7 +326,9 @@ var procedureModel = (function (_super) {
       console.log("suturing_procedure_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=G1wKpLLdUNE");
@@ -290,7 +339,9 @@ var procedureModel = (function (_super) {
       console.log("steristrips_procedure_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=Lw8YuMXwQXU");
@@ -301,7 +352,9 @@ var procedureModel = (function (_super) {
       console.log("dermabond_procedure_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=L_TGx3sP0YA");
@@ -312,7 +365,9 @@ var procedureModel = (function (_super) {
       console.log("skin_stapling_procedure_action is activated");
       if (!(self.connect())) {
         console.log("no");
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=cSUzhtehA-Y");
