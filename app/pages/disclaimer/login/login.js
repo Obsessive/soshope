@@ -1,10 +1,13 @@
 var FrameModule = require("ui/frame");
 var observable = require("data/observable");
-var Toast = require("nativescript-toast");
 var fetchModule = require("fetch");
 var connectivity = require("connectivity");
+var application =require("application");
+if (application.android) {
+  var Toast = require("nativescript-toast");
+}
 var appSettings = require("application-settings");
-var page;
+var page,self;
 function loginLoaded(args) {
   page = args.object;
   var loginModel = (function (_super) {
@@ -43,12 +46,12 @@ function loginLoaded(args) {
         if (name !== "") {
         if (phone !== "") {
           if (email !== "") {
-            fetchModule.fetch("https://httpbin.org/post", {
+            fetchModule.fetch("http://soshope.obsessive.tech/user/register", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ name: name, phone: phone, email: email })
-            }).then(function (response) 
-            { 
+            }).then(function (response)
+            {
              appSettings.setBoolean("firsttime", true);
              appSettings.setString("name", name);
              var navigationEntry = {
@@ -62,16 +65,32 @@ function loginLoaded(args) {
             console.log("Error occurred " + e);
           });
           }else{
-            Toast.makeText("Enter the email","long").show();
+            if (application.android) {
+              Toast.makeText("Enter the email","long").show();
+            }else {
+              alert("Enter the email");
+            }
           }
         }else{
-          Toast.makeText("Enter the phone","long").show();
+          if (application.android) {
+            Toast.makeText("Enter the phone","long").show();
+          }else {
+            alert("Enter the phone");
+          }
         }
       }else{
-        Toast.makeText("Enter the name","long").show();
+        if (application.android) {
+          Toast.makeText("Enter the name","long").show();
+        }else {
+          alert("Enter the name");
+        }
       }
       }else{
-        Toast.makeText("Please check your internet connection","long").show();
+        if (application.android) {
+          Toast.makeText("Please check your internet connection","long").show();
+        }else {
+          alert("Please check your internet connection");
+        }
       }
     };
 
