@@ -118,6 +118,10 @@ var procedureModel = (function (_super) {
         }else {
           alert("Please check your internet connection");
         }
+=======
+         Toast.makeText("Please check your internet connection","long").show();
+       }
+>>>>>>> 2e2d155ee9511b7702bcbba742bf47194f36bc78
       }else {
         console.log("yes");
         utilityModule.openUrl("https://www.youtube.com/watch?v=s6lf1jm3qRQ");
