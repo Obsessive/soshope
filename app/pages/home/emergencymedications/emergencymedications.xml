@@ -1,6 +1,7 @@
 <page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:dd="nativescript-drop-down" loaded="emergencymedicationsLoaded">
-  <StackLayout>
-  	<dd:DropDown items="{{ med_items }}" id="med" selectedIndex="{{ med_selectedIndex }}" class="margin15 font18 blacktext" />
+  <GridLayout rows="auto,*" columns="*">
+  	<dd:DropDown row="0" col="0" items="{{ med_items }}" id="med" selectedIndex="{{ med_selectedIndex }}" class="margin15 font18 blacktext" />
+    <StackLayout row="1" col="0">
   	<ScrollView>
   		<StackLayout class="margin10">
   			<StackLayout visibility="{{ medpage== 0 ? 'visible' : 'collapse' }}">
@@ -89,5 +90,6 @@
   			</StackLayout>
   		</StackLayout>
   	</ScrollView>
-  </StackLayout>
+    </StackLayout>
+  </GridLayout>
 </page>

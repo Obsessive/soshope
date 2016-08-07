@@ -12,7 +12,6 @@
     "nativescript-drop-down": "^1.2.4",
     "nativescript-loading-indicator": "^2.0.1",
     "nativescript-statusbar": "^1.0.0",
-    "nativescript-telerik-ui": "^1.0.1",
     "nativescript-toast": "^1.2.0",
     "tns-core-modules": "^2.1.0"
   },
