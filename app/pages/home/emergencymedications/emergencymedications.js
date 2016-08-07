@@ -45,6 +45,7 @@ var emergencymedicationsModel = (function (_super) {
            self.set("medpage",page.getViewById("med").selectedIndex-1);
          }
         });
+        self.set("med_selectedIndex", 0);
   };
   emergencymedicationsModel.prototype.calculate_action = function(){
       console.log("calculate_action is activated");

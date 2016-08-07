@@ -12,6 +12,8 @@
     <StackLayout row="1" col="0" class="margin10">
       <ScrollView>
         <StackLayout>
+          <ScrollView orientation="horizontal">
+            <StackLayout>
           <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*,*,*" visibility="{{ vitalspage==0? 'visible' : 'collapse' }}">
             <Label row="0" col="0" textWrap="true" text="AGE" class="whitetext themebackground verticalcenter margin5 font22 bold textcenter"/>
             <Label row="0" col="1" textWrap="true" text="HEART RATE(BEATS/MIN)" class="whitetext themebackground verticalcenter margin5 font22 bold textcenter"/>
@@ -81,6 +83,8 @@
             <Label textWrap="true" class="blacktext font24 bold textcenter" text="Key Values in Practice"/>
             <Label textWrap="true" class="blacktext font24" text="{{ vitalscontentk1 }}"/>
           </StackLayout>
+          </StackLayout>
+        </ScrollView>
         </StackLayout>
       </ScrollView>
     </StackLayout>
